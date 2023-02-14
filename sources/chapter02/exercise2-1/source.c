@@ -15,14 +15,14 @@
 #define CSHRT_MAX  (2 << 14) - 1	// 32767
 	
 /* Range of Int Type by Computation */
-#define CCUINT_MAX  (2UL << 31) - 1
-#define CINT_MIN   (2 << 30) * -1
-#define CINT_MAX   (2 << 30) - 1
+#define CCUINT_MAX  (2UL << 31) - 1	// 4294967295
+#define CINT_MIN   (2 << 30) * -1	// -2147483648
+#define CINT_MAX   (2 << 30) - 1	// 2147483647
 
 /* Range of Long Type By Computation */
-#define NULONG_MAX  (2UL << 63)
-#define NLONG_MIN  (2L << 62) * -1
-#define NLONG_MAX  (2L << 62) - 1
+#define NULONG_MAX  (2LU << 63) - 1	// 18446744073709551615	
+#define NLONG_MIN  (2L << 62) * -1	// -9223372036854775808
+#define NLONG_MAX  (2L << 62) - 1	// 9223372036854775807
 
 int main(void){
 
